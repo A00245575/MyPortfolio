@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-portfolio';
+
+  getUrl()
+{
+  return "url('http://www.sclance.com/backgrounds/portfolio-background-image/portfolio-background-image_1793072.jpg')";
+}
 }
