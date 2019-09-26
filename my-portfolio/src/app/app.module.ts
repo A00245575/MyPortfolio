@@ -6,7 +6,6 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { ContactComponent } from './contact/contact.component';
-import { ConnectionService } from './connection.service';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
 import { ProjectsComponent } from './projects/projects.component';
@@ -40,12 +39,11 @@ const appRoutes: Routes = [
     ReactiveFormsModule,
     HttpClientModule,
     RouterModule.forRoot(
-      appRoutes,
-      { enableTracing: true } // <-- debugging purposes only
+      appRoutes
     )
   ],
   providers: [
-    ConnectionService
+
   ],
   bootstrap: [AppComponent]
 })

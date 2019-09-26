@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  target: 'jameskidd61@gmail.com'
 };
