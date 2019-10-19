@@ -4,7 +4,7 @@
   <!-- Default form contact -->
 <form class="text-center border border-light p-5" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
 
-  <p class="h4 mb-4">Contact us</p>
+  <p class="h4 mb-4">Please fill out the form</p>
 
   <!-- Name -->
   <input type="text" formControlName="contactFormName" id="defaultContactFormName" mdbInput
@@ -20,8 +20,6 @@
     <option value="" disabled>Choose option</option>
     <option value="1" selected>Feedback</option>
     <option value="2">Report a bug</option>
-    <option value="3">Feature request</option>
-    <option value="4">Feature request</option>
   </select>
 
   <!-- Message -->
